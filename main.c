@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #define SIZE 5 // Οριζω το μεγεθος του πινακα με τις τιμες του καθε κομματιου της λιστας
-#define numOfNodes 5 // Οριζω το πληθος των κομματιων της λιστας
+#define numOfNodes 5 // Οριζω το πληθος των κομματιων της λιστας που θελω να φτιαξω
 struct node {
 	int value[SIZE];
 	struct node *next;
