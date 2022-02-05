@@ -35,18 +35,7 @@ void printvalues(nodet *head) {
 	printf("\n");
 }
 
-void getnexts(nodet *head){
-	nodet *temp = head;
-	nodet *temp2 = head;
-	while (temp != NULL){
-		temp = temp->prev;
-		if (temp == NULL){
-			break;
-		}
-		temp->next = temp2;
-		temp2 = temp;
-	}
-}
+
 
 void addattheend (nodet *head, int value){
 	nodet *temp = head;
@@ -80,7 +69,6 @@ int main(int argc, char *argv[]) {
 		temp = createnode((i*5), temp);
 		head = temp;
 	}
-	getnexts (head);
 	printvaluesnormally(tail);
 	
 	return 0;
